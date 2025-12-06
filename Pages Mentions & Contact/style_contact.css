@@ -1,0 +1,254 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.barre-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.conteneur-logo {
+    margin: 0 auto;
+   
+    padding: 10px; 
+}
+
+.placeholder-navigation {
+    width: 28px;
+}
+
+.image-logo {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+/* Menu Burger */
+
+
+.menu-toggle {
+    display: none;
+}
+
+/* Icône de menu */
+.icone-menu {
+    font-size: 28px;
+    text-decoration: none;
+    color: #333;
+    z-index: 40;
+    cursor: pointer;
+    line-height: 1;
+    display: block;
+    transition: color 0.3s;
+    position: relative;
+}
+
+
+
+
+
+.menu-deroulant {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+
+    
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+/* Liste des liens du menu */
+.liste-menu {
+    list-style: none;
+    padding: 80px 0 0;
+    margin: 0;
+    text-align: center; /
+}
+
+.liste-menu li {
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.liste-menu li:last-child {
+    border-bottom: none;
+}
+
+.liste-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 19px; 
+    font-weight: 480; 
+    display: block;
+    padding: 15px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.liste-menu a:hover,
+.liste-menu a.actif {
+    background-color: #f0f0f0;
+    color: #4CAF50;
+}
+
+
+
+
+
+.menu-toggle:checked ~ .menu-deroulant {
+    transform: translateX(0);
+}
+
+
+
+
+
+.conteneur-contact {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titre-contact {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.lien-disponibilite {
+    color: #4CAF50;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.titre-nous-joindre {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.details-contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.lien-contact {
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lien-email {
+    color: #4CAF50;
+}
+
+.lien-telephone {
+    color: #D32F2F;
+}
+
+.lien-contact:hover {
+    text-decoration: underline;
+}
+
+.icone-contact {
+    margin-right: 10px;
+}
+
+.info-reseaux-sociaux {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.liste-sociale {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.liste-sociale li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.etiquette-sociale {
+    font-weight: 700;
+    color: #333;
+    display: inline-block;
+    width: 90px;
+}
+
+.icones-sociales {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.lien-social {
+    display: block;
+    line-height: 0;
+    transition: transform 0.3s ease;
+}
+
+.lien-social:hover {
+    transform: scale(1.1);
+}
+
+.icone-sociale {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.mentions-legales {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+.mentions-legales:hover {
+    color: #4CAF50;
+    border-bottom-color: #4CAF50;
+}
+/*CORRECTION POUR LE LIEN DU LOGO */
+.conteneur-logo a {
+    text-decoration: none; 
+}

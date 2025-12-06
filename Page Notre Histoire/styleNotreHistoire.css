@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: system-ui;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/* le header */
+
+header {
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	position: sticky;
+	margin-bottom: 5%;
+    display: inline-flex;
+
+}
+.aLogo {
+    width: 100%;
+}
+
+header img {
+    margin-top: 0.5%;
+	margin-bottom: 2%;
+	width: 15%;
+	order: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+header nav {
+	order: 0;
+    justify-self: start;
+
+}
+
+/* le menu burger */
+
+nav {
+    position: relative;
+}
+
+
+nav .divBurger {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 80px;
+    border-right: 2px solid black;
+    transition: left 0.4s ease;
+    z-index: 999;
+    box-sizing: border-box; 
+}
+
+
+nav .divBurger a {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+nav .divBurger a:hover {
+    background-color: #f2f2f2;
+    color: #42ae5c;
+}
+
+
+label {
+    position: relative;
+    display: block;
+    color: black;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10px;
+    z-index: 2000;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+#toggle:checked + .divBurger {
+    left: 0;
+}
+
+
+#toggle:checked ~ label {
+    position: fixed;
+    left: 260px;     
+    top: 10px;
+    font-size: 35px;
+    transform: rotate(90deg);
+    z-index: 2001;    
+
+}
+
+/*fin menu burger, main */
+
+
+.divContenant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;          
+    gap: 2%;                       
+    box-sizing: border-box;                
+}
+
+
+.divTexte,
+.divImage {
+    width: 650px;
+    height: 620px;
+
+  
+
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    display: inline-block;
+    vertical-align: top;
+	
+}
+.divTexte {
+    background-image: url("images/fond1.png");
+	margin-right: 40px;
+}
+.divTexte p {
+    font-size: 20px;
+}
+.divImage {
+    background-image: url("images/fond2.png");
+	border-radius: 20px;
+    padding: 25px; 
+    padding-top: 30px ;       
+    box-sizing: border-box;
+
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+	border-radius: 20px
+}
+
+
+
+.imgDansDiv {
+    width: 90%;
+    height: auto;
+    display: block;
+	border-radius: 20px
+}
+
+
+/*Footer */
+
+footer {
+    width: 100%;
+
+    background-color: #d6d6d6;
+    
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+}
+/*le bouton de gauche */
+.aContact {
+    text-decoration: none;
+    background-color: #42ae5c;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-top: 0.8%;
+    border-radius: 25px;
+    font-size: 100%;
+    color: white;
+}
+
+/* bouton de droite */
+.aMentions {
+    float: right;
+    text-decoration: none;
+    padding: 1%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    margin-top: 0.8%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 25px;
+    font-size: 100%;
+    color: white;
+    background-color: #dec22c;
+}

@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: system-ui;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/* le header */
+
+header {
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	position: sticky;
+	margin-bottom: 2%;
+	display: flex;
+}
+
+.aLogo {
+	width: 100%;
+}
+
+header img {
+	margin-top: 0.4%;
+	width: 250px;
+	right: 50%;
+	order: 1;
+	justify-self: end;
+}
+
+header nav {
+	order: 0;
+}
+
+/*fin du header */
+
+/*le menu burger */
+
+nav {
+    position: relative;
+}
+
+
+nav .divBurger {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 80px;
+    border-right: 2px solid black;
+    transition: left 0.4s ease;
+    z-index: 999;
+    box-sizing: border-box; 
+}
+
+
+nav .divBurger a {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+nav .divBurger a:hover {
+    background-color: #f2f2f2;
+    color: #42ae5c;
+}
+
+
+label {
+    position: relative;
+    display: block;
+    color: black;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10px;
+    z-index: 2000;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+#toggle:checked + .divBurger {
+    left: 0;
+}
+
+
+#toggle:checked ~ label {
+    position: fixed;
+    left: 260px;     
+    top: 10px;
+    font-size: 35px;
+    transform: rotate(90deg);
+    z-index: 2001;    
+
+}
+
+/*fin menu burger et debut main */
+
+main {
+	background-color: #ffffff;
+}
+
+
+.divContenant {
+	width: 100%;
+	height: 50em;
+	margin: auto;
+	margin-top: 3%;
+	justify-content: center;
+    align-items: center;     
+	box-sizing: border-box;
+}
+/* le calendrier qui prend 4/6 du main */
+.divCalendrier {
+	width: 35%;
+	height: 70%;
+	display: inline-block;
+	border-radius: 5%;
+	margin-left: 5%;
+	padding: 3%;
+
+}
+
+
+/* le formulaire prenant le reste du main */
+.divFormulaire {
+	width: 35%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	border-radius: 5%;
+	margin-top: 0%;
+	margin-right: 5%;
+	padding: 3%;
+	display: inline-block;
+
+}
+
+
+
+/*fin main et debut footer */
+
+footer {
+    width: 100%;
+
+    background-color: #d6d6d6;
+    
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+}
+/*le bouton de gauche */
+.aContact {
+	text-decoration: none;
+	background-color: #42ae5c;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: right;
+	margin-right: 2%;
+	margin-bottom: 1%;
+	margin-top: 0.8%;
+	border-radius: 25px;
+	font-size: 100%;
+	color: white;
+}
+
+/* bouton de droite */
+.aMentions {
+	float: right;
+	text-decoration: none;
+	padding: 1%;
+	margin-right: 2%;
+	margin-bottom: 1%;
+	margin-top: 0.8%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 25px;
+	font-size: 100%;
+	color: white;
+	background-color: #dec22c;
+}
+
+/* fin footer */
